@@ -1,0 +1,28 @@
+//
+//  Kings.pch
+//  Kings
+//
+//  Created by isBSO on 5/2/16.
+//  Copyright © 2016 Bishow. All rights reserved.
+//
+
+#ifndef Kings_pch
+#define Kings_pch
+#import "Player.h"
+#import "Game.h"
+#import "City.h"
+#import "TopMenuView.h"
+#import "GameMapView.h"
+#import "GameHelper.h"
+#import "CityUtils.h"
+
+#import "TemplateFancyNameLabel.h"
+
+#define kCityCellheight 200
+#define kCityCellPAdding 20
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define DEGREES_TO_RADIANS(angle) ((angle) / 180.0 * M_PI)
+
+#endif /* Kings_pch */

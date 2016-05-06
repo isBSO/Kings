@@ -9,13 +9,28 @@
 /* Begin PBXBuildFile section */
 		670068BE1CD80C0500D18BE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 670068BD1CD80C0500D18BE8 /* main.m */; };
 		670068C11CD80C0500D18BE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 670068C01CD80C0500D18BE8 /* AppDelegate.m */; };
-		670068C41CD80C0500D18BE8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 670068C31CD80C0500D18BE8 /* ViewController.m */; };
 		670068C71CD80C0500D18BE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 670068C51CD80C0500D18BE8 /* Main.storyboard */; };
 		670068CA1CD80C0500D18BE8 /* Kings.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 670068C81CD80C0500D18BE8 /* Kings.xcdatamodeld */; };
 		670068CC1CD80C0500D18BE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 670068CB1CD80C0500D18BE8 /* Assets.xcassets */; };
 		670068CF1CD80C0500D18BE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 670068CD1CD80C0500D18BE8 /* LaunchScreen.storyboard */; };
 		670068DA1CD80C0500D18BE8 /* KingsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 670068D91CD80C0500D18BE8 /* KingsTests.m */; };
 		670068E51CD80C0600D18BE8 /* KingsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 670068E41CD80C0600D18BE8 /* KingsUITests.m */; };
+		670068F41CD80C6100D18BE8 /* LandingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 670068F31CD80C6100D18BE8 /* LandingViewController.m */; };
+		670068F71CD80CA400D18BE8 /* GameHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 670068F61CD80CA400D18BE8 /* GameHomeViewController.m */; };
+		670068FB1CD80CCC00D18BE8 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 670068FA1CD80CCC00D18BE8 /* Game.m */; };
+		670068FF1CD80D0800D18BE8 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 670068FE1CD80D0800D18BE8 /* Player.m */; };
+		670069031CD8112A00D18BE8 /* TopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 670069021CD8112A00D18BE8 /* TopMenuView.m */; };
+		670069051CD8113600D18BE8 /* TopMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 670069041CD8113600D18BE8 /* TopMenuView.xib */; };
+		670069091CD8136000D18BE8 /* GameMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 670069081CD8136000D18BE8 /* GameMapView.m */; };
+		6700690B1CD8136D00D18BE8 /* GameMapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6700690A1CD8136D00D18BE8 /* GameMapView.xib */; };
+		6700690F1CD8148700D18BE8 /* GameHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6700690E1CD8148700D18BE8 /* GameHelper.m */; };
+		670069121CD833D800D18BE8 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 670069111CD833D800D18BE8 /* City.m */; };
+		670069151CD8355100D18BE8 /* CityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 670069141CD8355100D18BE8 /* CityCell.m */; };
+		670069171CD8355E00D18BE8 /* CityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 670069161CD8355E00D18BE8 /* CityCell.xib */; };
+		6700691C1CD837C500D18BE8 /* TemplateFancyNameLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6700691B1CD837C500D18BE8 /* TemplateFancyNameLabel.m */; };
+		6700691F1CD83AD000D18BE8 /* CityUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6700691E1CD83AD000D18BE8 /* CityUtils.m */; };
+		67B3725D1CDC345D000C2120 /* FJLineToGridAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B3725C1CDC345D000C2120 /* FJLineToGridAnimator.m */; };
+		67B372601CDC353D000C2120 /* CityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B3725F1CDC353D000C2120 /* CityViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +55,6 @@
 		670068BD1CD80C0500D18BE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		670068BF1CD80C0500D18BE8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		670068C01CD80C0500D18BE8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		670068C21CD80C0500D18BE8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		670068C31CD80C0500D18BE8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		670068C61CD80C0500D18BE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		670068C91CD80C0500D18BE8 /* Kings.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Kings.xcdatamodel; sourceTree = "<group>"; };
 		670068CB1CD80C0500D18BE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +66,36 @@
 		670068E01CD80C0600D18BE8 /* KingsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KingsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		670068E41CD80C0600D18BE8 /* KingsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KingsUITests.m; sourceTree = "<group>"; };
 		670068E61CD80C0600D18BE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		670068F21CD80C6100D18BE8 /* LandingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingViewController.h; sourceTree = "<group>"; };
+		670068F31CD80C6100D18BE8 /* LandingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingViewController.m; sourceTree = "<group>"; };
+		670068F51CD80CA400D18BE8 /* GameHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameHomeViewController.h; sourceTree = "<group>"; };
+		670068F61CD80CA400D18BE8 /* GameHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameHomeViewController.m; sourceTree = "<group>"; };
+		670068F91CD80CCC00D18BE8 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		670068FA1CD80CCC00D18BE8 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		670068FD1CD80D0800D18BE8 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		670068FE1CD80D0800D18BE8 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		670069001CD80DD000D18BE8 /* Kings.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kings.pch; sourceTree = "<group>"; };
+		670069011CD8112A00D18BE8 /* TopMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopMenuView.h; sourceTree = "<group>"; };
+		670069021CD8112A00D18BE8 /* TopMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopMenuView.m; sourceTree = "<group>"; };
+		670069041CD8113600D18BE8 /* TopMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopMenuView.xib; sourceTree = "<group>"; };
+		670069071CD8136000D18BE8 /* GameMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameMapView.h; sourceTree = "<group>"; };
+		670069081CD8136000D18BE8 /* GameMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameMapView.m; sourceTree = "<group>"; };
+		6700690A1CD8136D00D18BE8 /* GameMapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameMapView.xib; sourceTree = "<group>"; };
+		6700690D1CD8148700D18BE8 /* GameHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameHelper.h; sourceTree = "<group>"; };
+		6700690E1CD8148700D18BE8 /* GameHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameHelper.m; sourceTree = "<group>"; };
+		670069101CD833D800D18BE8 /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		670069111CD833D800D18BE8 /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
+		670069131CD8355100D18BE8 /* CityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityCell.h; sourceTree = "<group>"; };
+		670069141CD8355100D18BE8 /* CityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityCell.m; sourceTree = "<group>"; };
+		670069161CD8355E00D18BE8 /* CityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityCell.xib; sourceTree = "<group>"; };
+		6700691A1CD837C500D18BE8 /* TemplateFancyNameLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateFancyNameLabel.h; sourceTree = "<group>"; };
+		6700691B1CD837C500D18BE8 /* TemplateFancyNameLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateFancyNameLabel.m; sourceTree = "<group>"; };
+		6700691D1CD83AD000D18BE8 /* CityUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityUtils.h; sourceTree = "<group>"; };
+		6700691E1CD83AD000D18BE8 /* CityUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityUtils.m; sourceTree = "<group>"; };
+		67B3725B1CDC345D000C2120 /* FJLineToGridAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJLineToGridAnimator.h; sourceTree = "<group>"; };
+		67B3725C1CDC345D000C2120 /* FJLineToGridAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJLineToGridAnimator.m; sourceTree = "<group>"; };
+		67B3725E1CDC353D000C2120 /* CityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityViewController.h; sourceTree = "<group>"; };
+		67B3725F1CDC353D000C2120 /* CityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +148,14 @@
 			children = (
 				670068BF1CD80C0500D18BE8 /* AppDelegate.h */,
 				670068C01CD80C0500D18BE8 /* AppDelegate.m */,
-				670068C21CD80C0500D18BE8 /* ViewController.h */,
-				670068C31CD80C0500D18BE8 /* ViewController.m */,
 				670068C51CD80C0500D18BE8 /* Main.storyboard */,
+				670068F21CD80C6100D18BE8 /* LandingViewController.h */,
+				670068F31CD80C6100D18BE8 /* LandingViewController.m */,
+				670069061CD8132C00D18BE8 /* TopView */,
+				670069001CD80DD000D18BE8 /* Kings.pch */,
+				6700690C1CD8137300D18BE8 /* GameMapView */,
+				670068FC1CD80CD000D18BE8 /* Models */,
+				670068F81CD80CAF00D18BE8 /* Game */,
 				670068CB1CD80C0500D18BE8 /* Assets.xcassets */,
 				670068CD1CD80C0500D18BE8 /* LaunchScreen.storyboard */,
 				670068D01CD80C0500D18BE8 /* Info.plist */,
@@ -141,6 +189,77 @@
 				670068E61CD80C0600D18BE8 /* Info.plist */,
 			);
 			path = KingsUITests;
+			sourceTree = "<group>";
+		};
+		670068F81CD80CAF00D18BE8 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				670068F51CD80CA400D18BE8 /* GameHomeViewController.h */,
+				670068F61CD80CA400D18BE8 /* GameHomeViewController.m */,
+				67B3725E1CDC353D000C2120 /* CityViewController.h */,
+				67B3725F1CDC353D000C2120 /* CityViewController.m */,
+				67B3725B1CDC345D000C2120 /* FJLineToGridAnimator.h */,
+				67B3725C1CDC345D000C2120 /* FJLineToGridAnimator.m */,
+				670069191CD837A200D18BE8 /* Templates */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
+		670068FC1CD80CD000D18BE8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				670069101CD833D800D18BE8 /* City.h */,
+				670069111CD833D800D18BE8 /* City.m */,
+				670068F91CD80CCC00D18BE8 /* Game.h */,
+				670068FA1CD80CCC00D18BE8 /* Game.m */,
+				670068FD1CD80D0800D18BE8 /* Player.h */,
+				670068FE1CD80D0800D18BE8 /* Player.m */,
+				6700690D1CD8148700D18BE8 /* GameHelper.h */,
+				6700690E1CD8148700D18BE8 /* GameHelper.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		670069061CD8132C00D18BE8 /* TopView */ = {
+			isa = PBXGroup;
+			children = (
+				670069011CD8112A00D18BE8 /* TopMenuView.h */,
+				670069021CD8112A00D18BE8 /* TopMenuView.m */,
+				670069041CD8113600D18BE8 /* TopMenuView.xib */,
+			);
+			name = TopView;
+			sourceTree = "<group>";
+		};
+		6700690C1CD8137300D18BE8 /* GameMapView */ = {
+			isa = PBXGroup;
+			children = (
+				670069071CD8136000D18BE8 /* GameMapView.h */,
+				670069081CD8136000D18BE8 /* GameMapView.m */,
+				6700690A1CD8136D00D18BE8 /* GameMapView.xib */,
+				670069181CD8358500D18BE8 /* cityCell */,
+			);
+			name = GameMapView;
+			sourceTree = "<group>";
+		};
+		670069181CD8358500D18BE8 /* cityCell */ = {
+			isa = PBXGroup;
+			children = (
+				670069131CD8355100D18BE8 /* CityCell.h */,
+				670069141CD8355100D18BE8 /* CityCell.m */,
+				670069161CD8355E00D18BE8 /* CityCell.xib */,
+			);
+			name = cityCell;
+			sourceTree = "<group>";
+		};
+		670069191CD837A200D18BE8 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				6700691A1CD837C500D18BE8 /* TemplateFancyNameLabel.h */,
+				6700691B1CD837C500D18BE8 /* TemplateFancyNameLabel.m */,
+				6700691D1CD83AD000D18BE8 /* CityUtils.h */,
+				6700691E1CD83AD000D18BE8 /* CityUtils.m */,
+			);
+			name = Templates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,9 +365,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				670069171CD8355E00D18BE8 /* CityCell.xib in Resources */,
 				670068CF1CD80C0500D18BE8 /* LaunchScreen.storyboard in Resources */,
 				670068CC1CD80C0500D18BE8 /* Assets.xcassets in Resources */,
+				6700690B1CD8136D00D18BE8 /* GameMapView.xib in Resources */,
 				670068C71CD80C0500D18BE8 /* Main.storyboard in Resources */,
+				670069051CD8113600D18BE8 /* TopMenuView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,9 +395,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				670068C41CD80C0500D18BE8 /* ViewController.m in Sources */,
+				670068F71CD80CA400D18BE8 /* GameHomeViewController.m in Sources */,
 				670068C11CD80C0500D18BE8 /* AppDelegate.m in Sources */,
 				670068CA1CD80C0500D18BE8 /* Kings.xcdatamodeld in Sources */,
+				6700690F1CD8148700D18BE8 /* GameHelper.m in Sources */,
+				6700691C1CD837C500D18BE8 /* TemplateFancyNameLabel.m in Sources */,
+				670069031CD8112A00D18BE8 /* TopMenuView.m in Sources */,
+				670069121CD833D800D18BE8 /* City.m in Sources */,
+				67B372601CDC353D000C2120 /* CityViewController.m in Sources */,
+				67B3725D1CDC345D000C2120 /* FJLineToGridAnimator.m in Sources */,
+				670068FB1CD80CCC00D18BE8 /* Game.m in Sources */,
+				6700691F1CD83AD000D18BE8 /* CityUtils.m in Sources */,
+				670068F41CD80C6100D18BE8 /* LandingViewController.m in Sources */,
+				670068FF1CD80D0800D18BE8 /* Player.m in Sources */,
+				670069091CD8136000D18BE8 /* GameMapView.m in Sources */,
+				670069151CD8355100D18BE8 /* CityCell.m in Sources */,
 				670068BE1CD80C0500D18BE8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,10 +549,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Kings/Kings.pch;
 				INFOPLIST_FILE = Kings/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Bishow.Kings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -426,10 +564,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Kings/Kings.pch;
 				INFOPLIST_FILE = Kings/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Bishow.Kings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -500,6 +642,7 @@
 				670068EB1CD80C0600D18BE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		670068EC1CD80C0600D18BE8 /* Build configuration list for PBXNativeTarget "KingsTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +651,7 @@
 				670068EE1CD80C0600D18BE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		670068EF1CD80C0600D18BE8 /* Build configuration list for PBXNativeTarget "KingsUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +660,7 @@
 				670068F11CD80C0600D18BE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
