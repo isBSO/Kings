@@ -554,7 +554,7 @@
 				INFOPLIST_FILE = Kings/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Bishow.Kings;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isBSO.Kings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -569,7 +569,7 @@
 				INFOPLIST_FILE = Kings/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Bishow.Kings;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isBSO.Kings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -581,7 +581,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = KingsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Bishow.KingsTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isBSO.KingsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kings.app/Kings";
 			};
@@ -593,7 +593,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = KingsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Bishow.KingsTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isBSO.KingsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kings.app/Kings";
 			};
@@ -604,7 +604,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = KingsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Bishow.KingsUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isBSO.KingsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = Kings;
 				USES_XCTRUNNER = YES;
@@ -616,7 +616,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = KingsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Bishow.KingsUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isBSO.KingsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = Kings;
 				USES_XCTRUNNER = YES;

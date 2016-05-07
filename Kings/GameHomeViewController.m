@@ -3,7 +3,7 @@
 //  Kings
 //
 //  Created by isBSO on 5/2/16.
-//  Copyright © 2016 Bishow. All rights reserved.
+//  Copyright © 2016 isBSO. All rights reserved.
 //
 
 #import "GameHomeViewController.h"
@@ -27,20 +27,7 @@
     return self;
 }
 
-- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
-                                  animationControllerForOperation:(UINavigationControllerOperation)operation
-                                               fromViewController:(UIViewController *)fromVC
-                                                 toViewController:(UIViewController *)toVC
-{
-    if (fromVC == self && operation == UINavigationControllerOperationPush) {
-        FJLineToGridAnimator *animator = [[FJLineToGridAnimator alloc] init];
-        animator.fromCollectionView = self.gameMap.collectionView;
-        return animator;
-    }
-    else {
-        return nil;
-    }
-}
+ 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

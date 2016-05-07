@@ -3,7 +3,7 @@
 //  Kings
 //
 //  Created by isBSO on 5/2/16.
-//  Copyright © 2016 Bishow. All rights reserved.
+//  Copyright © 2016 isBSO. All rights reserved.
 //
 
 #import "AppDelegate.h"
@@ -51,7 +51,7 @@
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
 - (NSURL *)applicationDocumentsDirectory {
-    // The directory the application uses to store the Core Data store file. This code uses a directory named "com.Bishow.Kings" in the application's documents directory.
+    // The directory the application uses to store the Core Data store file. This code uses a directory named "isBSO" in the application's documents directory.
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
