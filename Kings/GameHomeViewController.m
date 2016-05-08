@@ -10,7 +10,7 @@
 
 #import "CityViewController.h"
 
-@interface GameHomeViewController ()<GameMapViewDelegate,UIViewControllerAnimatedTransitioning>
+@interface GameHomeViewController ()<GameMapViewDelegate>
 @property (nonatomic,strong) TopMenuView* topView;
 @property (nonatomic,strong) GameMapView* gameMap;
 @property (weak, nonatomic) IBOutlet UIView *topCont;
@@ -54,6 +54,7 @@ dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.01 * NSEC_PER_SEC)),
     [self.navigationController pushViewController:dvc animated:YES];
 }
 -(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
 
 }
 #pragma mark- Top and bottom view
