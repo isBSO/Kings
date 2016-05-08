@@ -62,7 +62,6 @@
 		670068D01CD80C0500D18BE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		670068D51CD80C0500D18BE8 /* KingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KingsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		670068E01CD80C0600D18BE8 /* KingsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KingsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		670068E61CD80C0600D18BE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		670068F21CD80C6100D18BE8 /* LandingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingViewController.h; sourceTree = "<group>"; };
 		670068F31CD80C6100D18BE8 /* LandingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingViewController.m; sourceTree = "<group>"; };
 		670068F51CD80CA400D18BE8 /* GameHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameHomeViewController.h; sourceTree = "<group>"; };
@@ -180,7 +179,6 @@
 		670068E31CD80C0600D18BE8 /* KingsUITests */ = {
 			isa = PBXGroup;
 			children = (
-				670068E61CD80C0600D18BE8 /* Info.plist */,
 			);
 			path = KingsUITests;
 			sourceTree = "<group>";
