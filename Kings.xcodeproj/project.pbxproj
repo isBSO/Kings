@@ -13,7 +13,6 @@
 		670068CA1CD80C0500D18BE8 /* Kings.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 670068C81CD80C0500D18BE8 /* Kings.xcdatamodeld */; };
 		670068CC1CD80C0500D18BE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 670068CB1CD80C0500D18BE8 /* Assets.xcassets */; };
 		670068CF1CD80C0500D18BE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 670068CD1CD80C0500D18BE8 /* LaunchScreen.storyboard */; };
-		670068DA1CD80C0500D18BE8 /* KingsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 670068D91CD80C0500D18BE8 /* KingsTests.m */; };
 		670068E51CD80C0600D18BE8 /* KingsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 670068E41CD80C0600D18BE8 /* KingsUITests.m */; };
 		670068F41CD80C6100D18BE8 /* LandingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 670068F31CD80C6100D18BE8 /* LandingViewController.m */; };
 		670068F71CD80CA400D18BE8 /* GameHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 670068F61CD80CA400D18BE8 /* GameHomeViewController.m */; };
@@ -29,7 +28,9 @@
 		670069171CD8355E00D18BE8 /* CityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 670069161CD8355E00D18BE8 /* CityCell.xib */; };
 		6700691C1CD837C500D18BE8 /* TemplateFancyNameLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6700691B1CD837C500D18BE8 /* TemplateFancyNameLabel.m */; };
 		6700691F1CD83AD000D18BE8 /* CityUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6700691E1CD83AD000D18BE8 /* CityUtils.m */; };
-		67B3725D1CDC345D000C2120 /* FJLineToGridAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B3725C1CDC345D000C2120 /* FJLineToGridAnimator.m */; };
+		6789BF271CDEA1E4004A1589 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6789BF261CDEA1E4004A1589 /* Podfile */; };
+		6789BF281CDEA1E4004A1589 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6789BF261CDEA1E4004A1589 /* Podfile */; };
+		6789BF291CDEA1E4004A1589 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6789BF261CDEA1E4004A1589 /* Podfile */; };
 		67B372601CDC353D000C2120 /* CityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B3725F1CDC353D000C2120 /* CityViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -61,8 +62,6 @@
 		670068CE1CD80C0500D18BE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		670068D01CD80C0500D18BE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		670068D51CD80C0500D18BE8 /* KingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KingsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		670068D91CD80C0500D18BE8 /* KingsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KingsTests.m; sourceTree = "<group>"; };
-		670068DB1CD80C0500D18BE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		670068E01CD80C0600D18BE8 /* KingsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KingsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		670068E41CD80C0600D18BE8 /* KingsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KingsUITests.m; sourceTree = "<group>"; };
 		670068E61CD80C0600D18BE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,8 +91,7 @@
 		6700691B1CD837C500D18BE8 /* TemplateFancyNameLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateFancyNameLabel.m; sourceTree = "<group>"; };
 		6700691D1CD83AD000D18BE8 /* CityUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityUtils.h; sourceTree = "<group>"; };
 		6700691E1CD83AD000D18BE8 /* CityUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityUtils.m; sourceTree = "<group>"; };
-		67B3725B1CDC345D000C2120 /* FJLineToGridAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJLineToGridAnimator.h; sourceTree = "<group>"; };
-		67B3725C1CDC345D000C2120 /* FJLineToGridAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJLineToGridAnimator.m; sourceTree = "<group>"; };
+		6789BF261CDEA1E4004A1589 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		67B3725E1CDC353D000C2120 /* CityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityViewController.h; sourceTree = "<group>"; };
 		67B3725F1CDC353D000C2120 /* CityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				670068BF1CD80C0500D18BE8 /* AppDelegate.h */,
+				6789BF261CDEA1E4004A1589 /* Podfile */,
 				670068C01CD80C0500D18BE8 /* AppDelegate.m */,
 				670068C51CD80C0500D18BE8 /* Main.storyboard */,
 				670068F21CD80C6100D18BE8 /* LandingViewController.h */,
@@ -176,8 +175,6 @@
 		670068D81CD80C0500D18BE8 /* KingsTests */ = {
 			isa = PBXGroup;
 			children = (
-				670068D91CD80C0500D18BE8 /* KingsTests.m */,
-				670068DB1CD80C0500D18BE8 /* Info.plist */,
 			);
 			path = KingsTests;
 			sourceTree = "<group>";
@@ -198,8 +195,6 @@
 				670068F61CD80CA400D18BE8 /* GameHomeViewController.m */,
 				67B3725E1CDC353D000C2120 /* CityViewController.h */,
 				67B3725F1CDC353D000C2120 /* CityViewController.m */,
-				67B3725B1CDC345D000C2120 /* FJLineToGridAnimator.h */,
-				67B3725C1CDC345D000C2120 /* FJLineToGridAnimator.m */,
 				670069191CD837A200D18BE8 /* Templates */,
 			);
 			name = Game;
@@ -370,6 +365,7 @@
 				670068CC1CD80C0500D18BE8 /* Assets.xcassets in Resources */,
 				6700690B1CD8136D00D18BE8 /* GameMapView.xib in Resources */,
 				670068C71CD80C0500D18BE8 /* Main.storyboard in Resources */,
+				6789BF271CDEA1E4004A1589 /* Podfile in Resources */,
 				670069051CD8113600D18BE8 /* TopMenuView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,6 +374,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6789BF281CDEA1E4004A1589 /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +382,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6789BF291CDEA1E4004A1589 /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,7 +401,6 @@
 				670069031CD8112A00D18BE8 /* TopMenuView.m in Sources */,
 				670069121CD833D800D18BE8 /* City.m in Sources */,
 				67B372601CDC353D000C2120 /* CityViewController.m in Sources */,
-				67B3725D1CDC345D000C2120 /* FJLineToGridAnimator.m in Sources */,
 				670068FB1CD80CCC00D18BE8 /* Game.m in Sources */,
 				6700691F1CD83AD000D18BE8 /* CityUtils.m in Sources */,
 				670068F41CD80C6100D18BE8 /* LandingViewController.m in Sources */,
@@ -418,7 +415,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				670068DA1CD80C0500D18BE8 /* KingsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

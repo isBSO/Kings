@@ -7,7 +7,7 @@
 //
 
 #import "GameHomeViewController.h"
-#import "FJLineToGridAnimator.h"
+
 #import "CityViewController.h"
 
 @interface GameHomeViewController ()<GameMapViewDelegate,UIViewControllerAnimatedTransitioning>
@@ -82,7 +82,7 @@ dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.01 * NSEC_PER_SEC)),
 
 //    self.gameMap.collectionView = collectionView;
 
-    [self.navigationController pushViewController:dvc animated:YES];
+    [self presentViewController:dvc animated:YES completion:nil];
     
 }
 

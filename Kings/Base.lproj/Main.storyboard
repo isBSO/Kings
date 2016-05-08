@@ -81,19 +81,29 @@
             </objects>
             <point key="canvasLocation" x="764" y="138"/>
         </scene>
-        <!--View Controller-->
+        <!--City View Controller-->
         <scene sceneID="eGE-Fu-hFS">
             <objects>
-                <viewController id="WvF-Gx-v5p" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CityViewController" id="WvF-Gx-v5p" customClass="CityViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Q4N-Mp-D23"/>
                         <viewControllerLayoutGuide type="bottom" id="I9n-Jz-QMv"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kEp-Sv-D3g">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="530"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgF-HS-6pX">
+                                <rect key="frame" x="14" y="20" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="dismissME:" destination="WvF-Gx-v5p" eventType="touchUpInside" id="vEE-Jj-GbK"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C7E-66-ksm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

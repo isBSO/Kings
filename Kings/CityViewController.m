@@ -13,10 +13,22 @@
 @end
 
 @implementation CityViewController
-
+-(id)init {
+    UIStoryboard *storyboard =
+    [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    self = [storyboard
+            instantiateViewControllerWithIdentifier:@"CityViewController"];
+    self.view.backgroundColor = [UIColor clearColor];
+    self.modalPresentationStyle =UIModalPresentationOverCurrentContext;
+    self.modalTransitionStyle =UIModalTransitionStyleCrossDissolve;
+    return self;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+- (IBAction)dismissME:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -21,9 +21,9 @@
 }
 - (IBAction)startGame:(id)sender {
     GameHomeViewController* gameVC=[[ GameHomeViewController alloc] initWithParameters:nil];
-    UINavigationController* contV=[[UINavigationController alloc] initWithRootViewController:gameVC];
+   
     
-    [self presentViewController:contV animated:YES completion:^{
+    [self presentViewController:gameVC animated:YES completion:^{
     }];
 }
 
