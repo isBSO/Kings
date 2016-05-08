@@ -13,7 +13,6 @@
 		670068CA1CD80C0500D18BE8 /* Kings.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 670068C81CD80C0500D18BE8 /* Kings.xcdatamodeld */; };
 		670068CC1CD80C0500D18BE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 670068CB1CD80C0500D18BE8 /* Assets.xcassets */; };
 		670068CF1CD80C0500D18BE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 670068CD1CD80C0500D18BE8 /* LaunchScreen.storyboard */; };
-		670068E51CD80C0600D18BE8 /* KingsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 670068E41CD80C0600D18BE8 /* KingsUITests.m */; };
 		670068F41CD80C6100D18BE8 /* LandingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 670068F31CD80C6100D18BE8 /* LandingViewController.m */; };
 		670068F71CD80CA400D18BE8 /* GameHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 670068F61CD80CA400D18BE8 /* GameHomeViewController.m */; };
 		670068FB1CD80CCC00D18BE8 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 670068FA1CD80CCC00D18BE8 /* Game.m */; };
@@ -63,7 +62,6 @@
 		670068D01CD80C0500D18BE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		670068D51CD80C0500D18BE8 /* KingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KingsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		670068E01CD80C0600D18BE8 /* KingsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KingsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		670068E41CD80C0600D18BE8 /* KingsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KingsUITests.m; sourceTree = "<group>"; };
 		670068E61CD80C0600D18BE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		670068F21CD80C6100D18BE8 /* LandingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingViewController.h; sourceTree = "<group>"; };
 		670068F31CD80C6100D18BE8 /* LandingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingViewController.m; sourceTree = "<group>"; };
@@ -182,7 +180,6 @@
 		670068E31CD80C0600D18BE8 /* KingsUITests */ = {
 			isa = PBXGroup;
 			children = (
-				670068E41CD80C0600D18BE8 /* KingsUITests.m */,
 				670068E61CD80C0600D18BE8 /* Info.plist */,
 			);
 			path = KingsUITests;
@@ -422,7 +419,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				670068E51CD80C0600D18BE8 /* KingsUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
