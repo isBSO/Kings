@@ -16,16 +16,16 @@ static GameHelper *instance = nil;
             instance = [[super allocWithZone:NULL] initSelf];
         }
     }
-    
+
     return instance;
 }
 
 - (instancetype)initSelf {
     self = [super init];
-    
+
     if (self) {
     }
-    
+
     return self;
 }
 -(NSArray*)getCities{
@@ -36,14 +36,14 @@ static GameHelper *instance = nil;
             city.cityName = @"Camelot";
             [cities addObject:city];
         }
-            // odd
-            else
-            {
-                City * city = [City new];
-                city.cityName = @"LALA";
-                [cities addObject:city];
-            }
-                // even
+        // odd
+        else
+        {
+            City * city = [City new];
+            city.cityName = @"LALA";
+            [cities addObject:city];
+        }
+        // even
 
 
     }

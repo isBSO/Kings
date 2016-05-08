@@ -30,11 +30,19 @@
 		6789BF271CDEA1E4004A1589 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6789BF261CDEA1E4004A1589 /* Podfile */; };
 		6789BF311CDEF587004A1589 /* KingsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6789BF301CDEF587004A1589 /* KingsTests.m */; };
 		6789BF391CDEF692004A1589 /* GameHelperTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6789BF381CDEF692004A1589 /* GameHelperTest.m */; };
+		6789BF411CDEF87A004A1589 /* KingsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6789BF401CDEF87A004A1589 /* KingsUITests.m */; };
 		67B372601CDC353D000C2120 /* CityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B3725F1CDC353D000C2120 /* CityViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		6789BF331CDEF587004A1589 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 670068B11CD80C0500D18BE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 670068B81CD80C0500D18BE8;
+			remoteInfo = Kings;
+		};
+		6789BF431CDEF87A004A1589 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 670068B11CD80C0500D18BE8 /* Project object */;
 			proxyType = 1;
@@ -84,6 +92,9 @@
 		6789BF301CDEF587004A1589 /* KingsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KingsTests.m; sourceTree = "<group>"; };
 		6789BF321CDEF587004A1589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6789BF381CDEF692004A1589 /* GameHelperTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameHelperTest.m; sourceTree = "<group>"; };
+		6789BF3E1CDEF87A004A1589 /* KingsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KingsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6789BF401CDEF87A004A1589 /* KingsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KingsUITests.m; sourceTree = "<group>"; };
+		6789BF421CDEF87A004A1589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67B3725E1CDC353D000C2120 /* CityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityViewController.h; sourceTree = "<group>"; };
 		67B3725F1CDC353D000C2120 /* CityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +114,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6789BF3B1CDEF87A004A1589 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -110,9 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				670068BB1CD80C0500D18BE8 /* Kings */,
-				670068D81CD80C0500D18BE8 /* KingsTests */,
-				670068E31CD80C0600D18BE8 /* KingsUITests */,
 				6789BF2F1CDEF587004A1589 /* KingsTests */,
+				6789BF3F1CDEF87A004A1589 /* KingsUITests */,
 				670068BA1CD80C0500D18BE8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -122,6 +139,7 @@
 			children = (
 				670068B91CD80C0500D18BE8 /* Kings.app */,
 				6789BF2E1CDEF587004A1589 /* KingsTests.xctest */,
+				6789BF3E1CDEF87A004A1589 /* KingsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,20 +173,6 @@
 				670068BD1CD80C0500D18BE8 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		670068D81CD80C0500D18BE8 /* KingsTests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = KingsTests;
-			sourceTree = "<group>";
-		};
-		670068E31CD80C0600D18BE8 /* KingsUITests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = KingsUITests;
 			sourceTree = "<group>";
 		};
 		670068F81CD80CAF00D18BE8 /* Game */ = {
@@ -250,6 +254,15 @@
 			path = KingsTests;
 			sourceTree = "<group>";
 		};
+		6789BF3F1CDEF87A004A1589 /* KingsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6789BF401CDEF87A004A1589 /* KingsUITests.m */,
+				6789BF421CDEF87A004A1589 /* Info.plist */,
+			);
+			path = KingsUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -288,6 +301,24 @@
 			productReference = 6789BF2E1CDEF587004A1589 /* KingsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		6789BF3D1CDEF87A004A1589 /* KingsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6789BF451CDEF87A004A1589 /* Build configuration list for PBXNativeTarget "KingsUITests" */;
+			buildPhases = (
+				6789BF3A1CDEF87A004A1589 /* Sources */,
+				6789BF3B1CDEF87A004A1589 /* Frameworks */,
+				6789BF3C1CDEF87A004A1589 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6789BF441CDEF87A004A1589 /* PBXTargetDependency */,
+			);
+			name = KingsUITests;
+			productName = KingsUITests;
+			productReference = 6789BF3E1CDEF87A004A1589 /* KingsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -301,6 +332,10 @@
 						CreatedOnToolsVersion = 7.2;
 					};
 					6789BF2D1CDEF587004A1589 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 670068B81CD80C0500D18BE8;
+					};
+					6789BF3D1CDEF87A004A1589 = {
 						CreatedOnToolsVersion = 7.2;
 						TestTargetID = 670068B81CD80C0500D18BE8;
 					};
@@ -321,6 +356,7 @@
 			targets = (
 				670068B81CD80C0500D18BE8 /* Kings */,
 				6789BF2D1CDEF587004A1589 /* KingsTests */,
+				6789BF3D1CDEF87A004A1589 /* KingsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -341,6 +377,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		6789BF2C1CDEF587004A1589 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6789BF3C1CDEF87A004A1589 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -381,6 +424,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6789BF3A1CDEF87A004A1589 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6789BF411CDEF87A004A1589 /* KingsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -388,6 +439,11 @@
 			isa = PBXTargetDependency;
 			target = 670068B81CD80C0500D18BE8 /* Kings */;
 			targetProxy = 6789BF331CDEF587004A1589 /* PBXContainerItemProxy */;
+		};
+		6789BF441CDEF87A004A1589 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 670068B81CD80C0500D18BE8 /* Kings */;
+			targetProxy = 6789BF431CDEF87A004A1589 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -545,6 +601,30 @@
 			};
 			name = Release;
 		};
+		6789BF461CDEF87A004A1589 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KingsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.isBSO.KingsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Kings;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		6789BF471CDEF87A004A1589 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KingsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.isBSO.KingsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Kings;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -571,6 +651,14 @@
 			buildConfigurations = (
 				6789BF361CDEF587004A1589 /* Debug */,
 				6789BF371CDEF587004A1589 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6789BF451CDEF87A004A1589 /* Build configuration list for PBXNativeTarget "KingsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6789BF461CDEF87A004A1589 /* Debug */,
+				6789BF471CDEF87A004A1589 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
