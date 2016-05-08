@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "Game.h"
 @interface GameHelper : NSObject
 @property (nonatomic, strong) Game *game;
 

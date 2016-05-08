@@ -28,8 +28,20 @@
 		6700691C1CD837C500D18BE8 /* TemplateFancyNameLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6700691B1CD837C500D18BE8 /* TemplateFancyNameLabel.m */; };
 		6700691F1CD83AD000D18BE8 /* CityUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6700691E1CD83AD000D18BE8 /* CityUtils.m */; };
 		6789BF271CDEA1E4004A1589 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6789BF261CDEA1E4004A1589 /* Podfile */; };
+		6789BF311CDEF587004A1589 /* KingsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6789BF301CDEF587004A1589 /* KingsTests.m */; };
+		6789BF391CDEF692004A1589 /* GameHelperTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6789BF381CDEF692004A1589 /* GameHelperTest.m */; };
 		67B372601CDC353D000C2120 /* CityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B3725F1CDC353D000C2120 /* CityViewController.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6789BF331CDEF587004A1589 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 670068B11CD80C0500D18BE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 670068B81CD80C0500D18BE8;
+			remoteInfo = Kings;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		670068B91CD80C0500D18BE8 /* Kings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kings.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,12 +80,23 @@
 		6700691D1CD83AD000D18BE8 /* CityUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityUtils.h; sourceTree = "<group>"; };
 		6700691E1CD83AD000D18BE8 /* CityUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityUtils.m; sourceTree = "<group>"; };
 		6789BF261CDEA1E4004A1589 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6789BF2E1CDEF587004A1589 /* KingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KingsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6789BF301CDEF587004A1589 /* KingsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KingsTests.m; sourceTree = "<group>"; };
+		6789BF321CDEF587004A1589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6789BF381CDEF692004A1589 /* GameHelperTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameHelperTest.m; sourceTree = "<group>"; };
 		67B3725E1CDC353D000C2120 /* CityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityViewController.h; sourceTree = "<group>"; };
 		67B3725F1CDC353D000C2120 /* CityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		670068B61CD80C0500D18BE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6789BF2B1CDEF587004A1589 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -89,6 +112,7 @@
 				670068BB1CD80C0500D18BE8 /* Kings */,
 				670068D81CD80C0500D18BE8 /* KingsTests */,
 				670068E31CD80C0600D18BE8 /* KingsUITests */,
+				6789BF2F1CDEF587004A1589 /* KingsTests */,
 				670068BA1CD80C0500D18BE8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				670068B91CD80C0500D18BE8 /* Kings.app */,
+				6789BF2E1CDEF587004A1589 /* KingsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -215,6 +240,16 @@
 			name = Templates;
 			sourceTree = "<group>";
 		};
+		6789BF2F1CDEF587004A1589 /* KingsTests */ = {
+			isa = PBXGroup;
+			children = (
+				6789BF301CDEF587004A1589 /* KingsTests.m */,
+				6789BF381CDEF692004A1589 /* GameHelperTest.m */,
+				6789BF321CDEF587004A1589 /* Info.plist */,
+			);
+			path = KingsTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -235,6 +270,24 @@
 			productReference = 670068B91CD80C0500D18BE8 /* Kings.app */;
 			productType = "com.apple.product-type.application";
 		};
+		6789BF2D1CDEF587004A1589 /* KingsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6789BF351CDEF587004A1589 /* Build configuration list for PBXNativeTarget "KingsTests" */;
+			buildPhases = (
+				6789BF2A1CDEF587004A1589 /* Sources */,
+				6789BF2B1CDEF587004A1589 /* Frameworks */,
+				6789BF2C1CDEF587004A1589 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6789BF341CDEF587004A1589 /* PBXTargetDependency */,
+			);
+			name = KingsTests;
+			productName = KingsTests;
+			productReference = 6789BF2E1CDEF587004A1589 /* KingsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -246,6 +299,10 @@
 				TargetAttributes = {
 					670068B81CD80C0500D18BE8 = {
 						CreatedOnToolsVersion = 7.2;
+					};
+					6789BF2D1CDEF587004A1589 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 670068B81CD80C0500D18BE8;
 					};
 				};
 			};
@@ -263,6 +320,7 @@
 			projectRoot = "";
 			targets = (
 				670068B81CD80C0500D18BE8 /* Kings */,
+				6789BF2D1CDEF587004A1589 /* KingsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -279,6 +337,13 @@
 				670068C71CD80C0500D18BE8 /* Main.storyboard in Resources */,
 				6789BF271CDEA1E4004A1589 /* Podfile in Resources */,
 				670069051CD8113600D18BE8 /* TopMenuView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6789BF2C1CDEF587004A1589 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +372,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6789BF2A1CDEF587004A1589 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6789BF311CDEF587004A1589 /* KingsTests.m in Sources */,
+				6789BF391CDEF692004A1589 /* GameHelperTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6789BF341CDEF587004A1589 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 670068B81CD80C0500D18BE8 /* Kings */;
+			targetProxy = 6789BF331CDEF587004A1589 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		670068C51CD80C0500D18BE8 /* Main.storyboard */ = {
@@ -439,6 +521,30 @@
 			};
 			name = Release;
 		};
+		6789BF361CDEF587004A1589 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KingsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.isBSO.KingsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kings.app/Kings";
+			};
+			name = Debug;
+		};
+		6789BF371CDEF587004A1589 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KingsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.isBSO.KingsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kings.app/Kings";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -459,6 +565,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		6789BF351CDEF587004A1589 /* Build configuration list for PBXNativeTarget "KingsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6789BF361CDEF587004A1589 /* Debug */,
+				6789BF371CDEF587004A1589 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 
