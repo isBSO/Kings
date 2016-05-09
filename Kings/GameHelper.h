@@ -10,6 +10,7 @@
 #import "Game.h"
 @interface GameHelper : NSObject
 @property (nonatomic, strong) Game *game;
+@property (nonatomic, strong) NSArray<Game*> *games;
 
 + (GameHelper *)standardManager;
 -(NSArray*)getCities;

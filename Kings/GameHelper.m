@@ -9,7 +9,9 @@
 #import "GameHelper.h"
 
 @implementation GameHelper
+
 static GameHelper *instance = nil;
+
 + (GameHelper *)standardManager {
     @synchronized(self) {
         if (!instance) {
@@ -41,6 +43,7 @@ static GameHelper *instance = nil;
         {
             City * city = [City new];
             city.cityName = @"LALA";
+            city.diplomacy = notMet;
             [cities addObject:city];
         }
         // even

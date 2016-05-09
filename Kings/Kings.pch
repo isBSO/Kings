@@ -18,7 +18,7 @@
 
 #import "TemplateFancyNameLabel.h"
 
-#define kCityCellheight 200
+#define kCityCellheight 300
 #define kCityCellPAdding 20
 
 // Include any system framework and library headers here that should be included in all compilation units.

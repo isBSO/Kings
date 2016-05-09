@@ -40,8 +40,7 @@
     XCUIElement *element2 = [[[app childrenMatchingType:XCUIElementTypeWindow] elementBoundByIndex:0] childrenMatchingType:XCUIElementTypeOther].element;
     XCUIElement *element = [element2 childrenMatchingType:XCUIElementTypeOther].element;
     [element tap];
-    [element tap];
-    sleep(10);
+  
 
 
 

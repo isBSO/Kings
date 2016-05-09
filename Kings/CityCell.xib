@@ -7,42 +7,51 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CityCell" id="chS-BF-pfT" customClass="CityCell">
-            <rect key="frame" x="0.0" y="0.0" width="315" height="255"/>
+            <rect key="frame" x="0.0" y="0.0" width="204" height="198"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="315" height="255"/>
+                <rect key="frame" x="0.0" y="0.0" width="204" height="198"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camelot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1lv-ik-dLV" customClass="TemplateFancyNameLabel">
-                        <rect key="frame" x="0.0" y="163" width="315" height="20.5"/>
+                        <rect key="frame" x="0.0" y="160" width="204" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRV-AO-9zD">
-                        <rect key="frame" x="70" y="48" width="175" height="145"/>
+                        <rect key="frame" x="13" y="13" width="183" height="128"/>
                         <state key="normal" image="castle"/>
                     </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flag" translatesAutoresizingMaskIntoConstraints="NO" id="FlM-Pr-hPk">
+                        <rect key="frame" x="8" y="0.0" width="48" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="I9b-6q-FdQ"/>
+                            <constraint firstAttribute="height" constant="35" id="Kb4-dK-h7G"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="ZRV-AO-9zD" secondAttribute="bottom" constant="62" id="5fl-0m-XGV"/>
-                <constraint firstItem="ZRV-AO-9zD" firstAttribute="top" secondItem="chS-BF-pfT" secondAttribute="top" constant="48" id="7ss-N4-fCy"/>
-                <constraint firstAttribute="trailing" secondItem="ZRV-AO-9zD" secondAttribute="trailing" constant="70" id="Eia-ZN-tFt"/>
+                <constraint firstAttribute="bottom" secondItem="ZRV-AO-9zD" secondAttribute="bottom" constant="57" id="5fl-0m-XGV"/>
+                <constraint firstItem="ZRV-AO-9zD" firstAttribute="top" secondItem="chS-BF-pfT" secondAttribute="top" constant="13" id="7ss-N4-fCy"/>
+                <constraint firstItem="FlM-Pr-hPk" firstAttribute="top" secondItem="chS-BF-pfT" secondAttribute="top" id="BSJ-61-CNx"/>
+                <constraint firstItem="FlM-Pr-hPk" firstAttribute="leading" secondItem="chS-BF-pfT" secondAttribute="leading" constant="8" id="EBc-jq-oa3"/>
+                <constraint firstAttribute="trailing" secondItem="ZRV-AO-9zD" secondAttribute="trailing" constant="8" id="Eia-ZN-tFt"/>
                 <constraint firstItem="1lv-ik-dLV" firstAttribute="leading" secondItem="chS-BF-pfT" secondAttribute="leading" id="U0m-rN-URZ"/>
-                <constraint firstAttribute="bottom" secondItem="1lv-ik-dLV" secondAttribute="bottom" constant="71.5" id="VlO-yB-VJg"/>
+                <constraint firstAttribute="bottom" secondItem="1lv-ik-dLV" secondAttribute="bottom" constant="17.5" id="VlO-yB-VJg"/>
                 <constraint firstAttribute="trailing" secondItem="1lv-ik-dLV" secondAttribute="trailing" id="kXV-gP-orA"/>
-                <constraint firstItem="ZRV-AO-9zD" firstAttribute="leading" secondItem="chS-BF-pfT" secondAttribute="leading" constant="70" id="mcE-1m-fVr"/>
+                <constraint firstItem="ZRV-AO-9zD" firstAttribute="leading" secondItem="chS-BF-pfT" secondAttribute="leading" constant="13" id="mcE-1m-fVr"/>
             </constraints>
-            <size key="customSize" width="315" height="255"/>
+            <size key="customSize" width="204" height="198"/>
             <connections>
                 <outlet property="cityName" destination="1lv-ik-dLV" id="EHy-li-JU5"/>
             </connections>
-            <point key="canvasLocation" x="301.5" y="333.5"/>
+            <point key="canvasLocation" x="246" y="305"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="castle" width="256" height="256"/>
+        <image name="castle" width="200" height="142"/>
+        <image name="flag" width="160" height="101"/>
     </resources>
 </document>

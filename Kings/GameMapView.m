@@ -21,6 +21,7 @@ NSString* kCityCell = @"CityCell";
 
 
 
+
     return myViewObject;
 }
 -(UICollectionView*)collectionView{
@@ -60,7 +61,7 @@ dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), di
     [UIView animateWithDuration:0 animations:^{
         self.scrollView.contentSize = CGSizeMake([self widthforCElls], [self widthforCElls]);
     } completion:^(BOOL finished) {
-        self.scrollView.backgroundColor=[CityUtils backGroundGrass];
+        self.scrollView.backgroundColor=[CityUtils backGroundPaper];
         [self.scrollView addSubview:self.collectionView];
     }];
 }
@@ -99,18 +100,12 @@ dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), di
 //    UILabel* label =[[UILabel alloc ] initWithFrame:CGRectMake(0, 0, 200, 200)];
 //    label.text= [NSString stringWithFormat:@"%ld", (long)indexPath.row];
 //    [cell addSubview:label];
-    cell.layer.borderWidth = 2.0f;
-    cell.layer.borderColor =[UIColor whiteColor].CGColor;
+//    cell.layer.borderWidth = 2.0f;
+//    cell.layer.borderColor =[UIColor whiteColor].CGColor;
    [ cell setupCellWithCity:self.cities[indexPath.row ]];
     cell.backgroundColor =[ UIColor clearColor];
 
-//    double rads = DEGREES_TO_RADIANS(225);
-//    CGAffineTransform transform = CGAffineTransformRotate(CGAffineTransformIdentity, rads);
-//
-//
-//    [UIView animateWithDuration:0 animations:^{
-//        cell.cityImage.transform = transform;
-//    }];
+
 
     return cell;
 }

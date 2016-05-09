@@ -32,6 +32,7 @@
 		6789BF391CDEF692004A1589 /* GameHelperTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6789BF381CDEF692004A1589 /* GameHelperTest.m */; };
 		6789BF411CDEF87A004A1589 /* KingsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6789BF401CDEF87A004A1589 /* KingsUITests.m */; };
 		67B372601CDC353D000C2120 /* CityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B3725F1CDC353D000C2120 /* CityViewController.m */; };
+		DF27A0D73A51129781FB1400 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4453E3229E0BC2CD7CB33481 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C5EF24FF1BED24BF43A4BB3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		4453E3229E0BC2CD7CB33481 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50CE575F2404B29F54348AF6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		670068B91CD80C0500D18BE8 /* Kings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		670068BD1CD80C0500D18BE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		670068BF1CD80C0500D18BE8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -104,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF27A0D73A51129781FB1400 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +136,8 @@
 				6789BF2F1CDEF587004A1589 /* KingsTests */,
 				6789BF3F1CDEF87A004A1589 /* KingsUITests */,
 				670068BA1CD80C0500D18BE8 /* Products */,
+				9504FD6CB13D06FC39EE1FFC /* Pods */,
+				B9E3EE11D432CC352447E440 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,11 +158,11 @@
 				6789BF261CDEA1E4004A1589 /* Podfile */,
 				670068C01CD80C0500D18BE8 /* AppDelegate.m */,
 				670068C51CD80C0500D18BE8 /* Main.storyboard */,
-				670068F21CD80C6100D18BE8 /* LandingViewController.h */,
-				670068F31CD80C6100D18BE8 /* LandingViewController.m */,
-				670069061CD8132C00D18BE8 /* TopView */,
 				670069001CD80DD000D18BE8 /* Kings.pch */,
+				6700691D1CD83AD000D18BE8 /* CityUtils.h */,
+				6700691E1CD83AD000D18BE8 /* CityUtils.m */,
 				6700690C1CD8137300D18BE8 /* GameMapView */,
+				67E499851CE017AA00631204 /* Data */,
 				670068FC1CD80CD000D18BE8 /* Models */,
 				670068F81CD80CAF00D18BE8 /* Game */,
 				670068CB1CD80C0500D18BE8 /* Assets.xcassets */,
@@ -178,6 +185,8 @@
 		670068F81CD80CAF00D18BE8 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				67E499861CE017CB00631204 /* Game Start */,
+				670069061CD8132C00D18BE8 /* TopView */,
 				670068F51CD80CA400D18BE8 /* GameHomeViewController.h */,
 				670068F61CD80CA400D18BE8 /* GameHomeViewController.m */,
 				67B3725E1CDC353D000C2120 /* CityViewController.h */,
@@ -192,12 +201,10 @@
 			children = (
 				670069101CD833D800D18BE8 /* City.h */,
 				670069111CD833D800D18BE8 /* City.m */,
-				670068F91CD80CCC00D18BE8 /* Game.h */,
-				670068FA1CD80CCC00D18BE8 /* Game.m */,
 				670068FD1CD80D0800D18BE8 /* Player.h */,
 				670068FE1CD80D0800D18BE8 /* Player.m */,
-				6700690D1CD8148700D18BE8 /* GameHelper.h */,
-				6700690E1CD8148700D18BE8 /* GameHelper.m */,
+				670068F91CD80CCC00D18BE8 /* Game.h */,
+				670068FA1CD80CCC00D18BE8 /* Game.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -238,8 +245,6 @@
 			children = (
 				6700691A1CD837C500D18BE8 /* TemplateFancyNameLabel.h */,
 				6700691B1CD837C500D18BE8 /* TemplateFancyNameLabel.m */,
-				6700691D1CD83AD000D18BE8 /* CityUtils.h */,
-				6700691E1CD83AD000D18BE8 /* CityUtils.m */,
 			);
 			name = Templates;
 			sourceTree = "<group>";
@@ -263,6 +268,41 @@
 			path = KingsUITests;
 			sourceTree = "<group>";
 		};
+		67E499851CE017AA00631204 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6700690D1CD8148700D18BE8 /* GameHelper.h */,
+				6700690E1CD8148700D18BE8 /* GameHelper.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		67E499861CE017CB00631204 /* Game Start */ = {
+			isa = PBXGroup;
+			children = (
+				670068F21CD80C6100D18BE8 /* LandingViewController.h */,
+				670068F31CD80C6100D18BE8 /* LandingViewController.m */,
+			);
+			name = "Game Start";
+			sourceTree = "<group>";
+		};
+		9504FD6CB13D06FC39EE1FFC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C5EF24FF1BED24BF43A4BB3 /* Pods.debug.xcconfig */,
+				50CE575F2404B29F54348AF6 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B9E3EE11D432CC352447E440 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4453E3229E0BC2CD7CB33481 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -270,9 +310,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 670068E91CD80C0600D18BE8 /* Build configuration list for PBXNativeTarget "Kings" */;
 			buildPhases = (
+				319A85307BF36B8A737C90F0 /* Check Pods Manifest.lock */,
 				670068B51CD80C0500D18BE8 /* Sources */,
 				670068B61CD80C0500D18BE8 /* Frameworks */,
 				670068B71CD80C0500D18BE8 /* Resources */,
+				87376B29F01D351E0F23C7C2 /* Embed Pods Frameworks */,
+				C981BD5452FBCC708ACAD4D1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -391,6 +434,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		319A85307BF36B8A737C90F0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		87376B29F01D351E0F23C7C2 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C981BD5452FBCC708ACAD4D1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		670068B51CD80C0500D18BE8 /* Sources */ = {
@@ -549,6 +640,7 @@
 		};
 		670068EA1CD80C0600D18BE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C5EF24FF1BED24BF43A4BB3 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -564,6 +656,7 @@
 		};
 		670068EB1CD80C0600D18BE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50CE575F2404B29F54348AF6 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -653,6 +746,7 @@
 				6789BF371CDEF587004A1589 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6789BF451CDEF87A004A1589 /* Build configuration list for PBXNativeTarget "KingsUITests" */ = {
 			isa = XCConfigurationList;
@@ -661,6 +755,7 @@
 				6789BF471CDEF87A004A1589 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

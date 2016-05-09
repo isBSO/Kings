@@ -10,4 +10,5 @@
 
 @interface CityUtils : NSObject
 +(UIColor*)backGroundGrass;
++(UIColor*)backGroundPaper;
 @end
