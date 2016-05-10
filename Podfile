@@ -7,4 +7,7 @@ platform :ios, '8.0'
 #    pod 'AFNetworking',path => 'https://github.com/AFNetworking/AFNetworking.git'
 #    
 #end
-pod 'AFNetworking', '~> 3.0'
+
+target 'Kings' do
+    pod 'AFNetworking', '~> 3.0'
+end
