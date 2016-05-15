@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 @protocol GameMapViewDelegate <NSObject>
 @required
-- (void)selectedTile:(City*)city;
+- (void)selectedTile:(Player*)city fromView:(UIView*)startingView;
 @end
 
 

@@ -10,8 +10,12 @@
 #import "Player.h"
 
 @interface Game : NSObject
+
+@property (nonatomic) NSString* gameName;
 @property (nonatomic, strong) Player* mainPlayer;
+
 @property (nonatomic,strong)NSArray<Player*>*otherPlayers;
+@property (nonatomic,strong)NSArray<Player*>*players;
 
 
 

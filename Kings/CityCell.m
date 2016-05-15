@@ -9,7 +9,7 @@
 #import "CityCell.h"
 
 @implementation CityCell
--(void)setupCellWithCity:(City*)city{
-    _cityName.text = city.cityName;
+-(void)setupCellWithCity:(Player*)player{
+    _cityName.text = player.firstName;
 }
 @end

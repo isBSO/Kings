@@ -76,8 +76,16 @@ dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.01 * NSEC_PER_SEC)),
 }
 
 #pragma mark- Delegate from MapView
--(void)selectedTile:(City *)city{
-    CityViewController *dvc = [[CityViewController alloc] init];
+-(void)selectedTile:(Player *)player fromView:(UIView *)startingView{
+//    id copyOfView =
+//    [NSKeyedUnarchiver unarchiveObjectWithData:[NSKeyedArchiver archivedDataWithRootObject:startingView]];
+//
+//    id clone = [NSKeyedUnarchiver unarchiveObjectWithData:copyOfView];
+//    UIView * view = (UIView*)clone;
+//    [UIView animateWithDuration:0.5 animations:^{
+//        view.frame =CGRectMake(0, 0, 120, 20);
+//    }];
+    CityViewController *dvc = [[CityViewController alloc] initWithPlayer:player];
 
     //    dvc.dataSource = collectionView.dataSource;
 

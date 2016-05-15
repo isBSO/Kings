@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CityCollectionViewCell" reuseIdentifier="CityCollectionViewCell" id="gTV-IL-0wX" customClass="CityCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="408" height="211"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="408" height="211"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="evg-K3-DUe">
+                        <rect key="frame" x="20" y="66" width="368" height="79"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wHB-bF-QRK">
+                                <rect key="frame" x="0.0" y="0.0" width="78" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="78" id="XsU-ro-0Dn"/>
+                                    <constraint firstAttribute="height" constant="79" id="swR-TJ-FEM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BlS-Il-R4f">
+                                <rect key="frame" x="78" y="30" width="136" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XoG-sB-aHt">
+                                <rect key="frame" x="214" y="29" width="88" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="gIR-Lv-NPT"/>
+                                    <constraint firstAttribute="width" constant="88" id="sTb-NN-NUo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yj4-I0-ttm">
+                                <rect key="frame" x="302" y="25" width="66" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="66" id="sJs-Xv-Vgj"/>
+                                    <constraint firstAttribute="height" constant="30" id="xxH-lw-ni5"/>
+                                </constraints>
+                                <state key="normal" title="+"/>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="BlS-Il-R4f" firstAttribute="leading" secondItem="wHB-bF-QRK" secondAttribute="trailing" constant="10" id="BWn-SQ-po0"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="evg-K3-DUe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="Msp-tw-LCk"/>
+                <constraint firstItem="evg-K3-DUe" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="STW-3d-mCv"/>
+                <constraint firstAttribute="trailing" secondItem="evg-K3-DUe" secondAttribute="trailing" constant="20" id="mda-lY-sQR"/>
+            </constraints>
+            <size key="customSize" width="408" height="211"/>
+            <connections>
+                <outlet property="button" destination="Yj4-I0-ttm" id="01A-DH-um4"/>
+                <outlet property="imageView" destination="wHB-bF-QRK" id="hFf-pA-71X"/>
+                <outlet property="title" destination="BlS-Il-R4f" id="0ly-eg-X37"/>
+                <outlet property="totalOutPut" destination="XoG-sB-aHt" id="b2s-Z3-5hb"/>
+            </connections>
+            <point key="canvasLocation" x="286" y="289.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

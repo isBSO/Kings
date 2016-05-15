@@ -9,9 +9,13 @@
 #import <Foundation/Foundation.h>
 #import "Game.h"
 @interface GameHelper : NSObject
-@property (nonatomic, strong) Game *game;
+@property (nonatomic, strong) Game *currentGame;
 @property (nonatomic, strong) NSArray<Game*> *games;
 
 + (GameHelper *)standardManager;
--(NSArray*)getCities;
+-(NSArray*)getPlayers:(Game*)game;
+-(void)createNewGameWithName:(NSString*)name players:(NSArray<Player*>*)players;
+
+-(void)startGame;
+-(NSString*)foodoutPutforMainPlayer;
 @end

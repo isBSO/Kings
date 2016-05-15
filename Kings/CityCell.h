@@ -15,5 +15,5 @@
 
 
 
--(void)setupCellWithCity:(City*)city;
+-(void)setupCellWithCity:(Player*)player;
 @end

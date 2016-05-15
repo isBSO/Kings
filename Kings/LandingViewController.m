@@ -17,6 +17,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    Player* mainPlayer = [Player new];
+    mainPlayer.firstName = @"Bishow ";
+    mainPlayer.lastName = @"Rajthala";
+    mainPlayer.titleLord = @"lodnsd fsdhfdskfjsd fd";
+    mainPlayer.goldCount = 12321;
+
+    Resource* foodResource = [Resource new];
+    foodResource.resourceType = food;
+    foodResource.resourceName = @"farm";
+    foodResource.foodOutPut = 100;
+    Resource* foodResource2 = [Resource new];
+    foodResource2.resourceType = food;
+    foodResource2.resourceName = @"farm";
+    foodResource2.foodOutPut = 1079;
+    mainPlayer.resources = @[foodResource,foodResource2];
+    
+    [[GameHelper standardManager] createNewGameWithName:@"Bishow game" players:@[mainPlayer]];
     // Do any additional setup after loading the view.
 }
 - (IBAction)startGame:(id)sender {

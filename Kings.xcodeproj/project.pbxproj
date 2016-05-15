@@ -27,6 +27,9 @@
 		670069171CD8355E00D18BE8 /* CityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 670069161CD8355E00D18BE8 /* CityCell.xib */; };
 		6700691C1CD837C500D18BE8 /* TemplateFancyNameLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6700691B1CD837C500D18BE8 /* TemplateFancyNameLabel.m */; };
 		6700691F1CD83AD000D18BE8 /* CityUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6700691E1CD83AD000D18BE8 /* CityUtils.m */; };
+		676460B51CE8E157009F7458 /* Resource.m in Sources */ = {isa = PBXBuildFile; fileRef = 676460B41CE8E157009F7458 /* Resource.m */; };
+		676460B91CE8E479009F7458 /* CityCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 676460B71CE8E479009F7458 /* CityCollectionViewCell.m */; };
+		676460BA1CE8E479009F7458 /* CityCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 676460B81CE8E479009F7458 /* CityCollectionViewCell.xib */; };
 		6789BF271CDEA1E4004A1589 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 6789BF261CDEA1E4004A1589 /* Podfile */; };
 		6789BF311CDEF587004A1589 /* KingsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6789BF301CDEF587004A1589 /* KingsTests.m */; };
 		6789BF391CDEF692004A1589 /* GameHelperTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6789BF381CDEF692004A1589 /* GameHelperTest.m */; };
@@ -91,6 +94,11 @@
 		6700691B1CD837C500D18BE8 /* TemplateFancyNameLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateFancyNameLabel.m; sourceTree = "<group>"; };
 		6700691D1CD83AD000D18BE8 /* CityUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityUtils.h; sourceTree = "<group>"; };
 		6700691E1CD83AD000D18BE8 /* CityUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityUtils.m; sourceTree = "<group>"; };
+		676460B31CE8E157009F7458 /* Resource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Resource.h; sourceTree = "<group>"; };
+		676460B41CE8E157009F7458 /* Resource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Resource.m; sourceTree = "<group>"; };
+		676460B61CE8E479009F7458 /* CityCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityCollectionViewCell.h; sourceTree = "<group>"; };
+		676460B71CE8E479009F7458 /* CityCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityCollectionViewCell.m; sourceTree = "<group>"; };
+		676460B81CE8E479009F7458 /* CityCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityCollectionViewCell.xib; sourceTree = "<group>"; };
 		6789BF261CDEA1E4004A1589 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6789BF2E1CDEF587004A1589 /* KingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KingsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6789BF301CDEF587004A1589 /* KingsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KingsTests.m; sourceTree = "<group>"; };
@@ -191,6 +199,9 @@
 				670068F61CD80CA400D18BE8 /* GameHomeViewController.m */,
 				67B3725E1CDC353D000C2120 /* CityViewController.h */,
 				67B3725F1CDC353D000C2120 /* CityViewController.m */,
+				676460B61CE8E479009F7458 /* CityCollectionViewCell.h */,
+				676460B71CE8E479009F7458 /* CityCollectionViewCell.m */,
+				676460B81CE8E479009F7458 /* CityCollectionViewCell.xib */,
 				670069191CD837A200D18BE8 /* Templates */,
 			);
 			name = Game;
@@ -205,6 +216,8 @@
 				670068FE1CD80D0800D18BE8 /* Player.m */,
 				670068F91CD80CCC00D18BE8 /* Game.h */,
 				670068FA1CD80CCC00D18BE8 /* Game.m */,
+				676460B31CE8E157009F7458 /* Resource.h */,
+				676460B41CE8E157009F7458 /* Resource.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -412,6 +425,7 @@
 				670069171CD8355E00D18BE8 /* CityCell.xib in Resources */,
 				670068CF1CD80C0500D18BE8 /* LaunchScreen.storyboard in Resources */,
 				670068CC1CD80C0500D18BE8 /* Assets.xcassets in Resources */,
+				676460BA1CE8E479009F7458 /* CityCollectionViewCell.xib in Resources */,
 				6700690B1CD8136D00D18BE8 /* GameMapView.xib in Resources */,
 				670068C71CD80C0500D18BE8 /* Main.storyboard in Resources */,
 				6789BF271CDEA1E4004A1589 /* Podfile in Resources */,
@@ -501,6 +515,8 @@
 				670068F41CD80C6100D18BE8 /* LandingViewController.m in Sources */,
 				670068FF1CD80D0800D18BE8 /* Player.m in Sources */,
 				670069091CD8136000D18BE8 /* GameMapView.m in Sources */,
+				676460B51CE8E157009F7458 /* Resource.m in Sources */,
+				676460B91CE8E479009F7458 /* CityCollectionViewCell.m in Sources */,
 				670069151CD8355100D18BE8 /* CityCell.m in Sources */,
 				670068BE1CD80C0500D18BE8 /* main.m in Sources */,
 			);

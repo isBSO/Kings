@@ -7,13 +7,16 @@
 //
 
 #import "CityViewController.h"
+#import "CityCollectionViewCell.h"
 
-@interface CityViewController ()
+@interface CityViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionViewP;
+@property (nonatomic,strong)Player* player;
 
 @end
-
+NSString* kCityCEllDetail = @"CityCollectionViewCell";
 @implementation CityViewController
--(id)init {
+-(id)initWithPlayer:(Player*)playa{
     UIStoryboard *storyboard =
     [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     self = [storyboard
@@ -21,20 +24,72 @@
     self.view.backgroundColor = [UIColor clearColor];
     self.modalPresentationStyle =UIModalPresentationOverCurrentContext;
     self.modalTransitionStyle =UIModalTransitionStyleCrossDissolve;
+    self.player = playa;
     return self;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [_collectionViewP registerNib:[UINib nibWithNibName:kCityCEllDetail bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:kCityCEllDetail];
+//    [_collectionViewP registerClass:[CityCollectionViewCell class] forCellWithReuseIdentifier:kCityCEllDetail];
+    _collectionViewP.dataSource = self;
+//    [_collectionView registerClass:[CityCell class] forCellWithReuseIdentifier:kCityCell];
+//    [_collectionView registerNib:[UINib nibWithNibName:kCityCell bundle:nil] forCellWithReuseIdentifier:kCityCell];
 }
 - (IBAction)dismissME:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+#pragma mark : CollectionViewDelegates
+- (NSInteger)collectionView:(UICollectionView *)collectionView
+     numberOfItemsInSection:(NSInteger)section {
+    return 1;
 }
+
+
+
+- (NSInteger)numberOfSectionsInCollectionView:
+(UICollectionView *)collectionView {
+    return 1;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
+                  cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    CityCollectionViewCell *cell =
+    [collectionView    dequeueReusableCellWithReuseIdentifier:kCityCEllDetail
+                                                      forIndexPath:indexPath];
+    //    UILabel* label =[[UILabel alloc ] initWithFrame:CGRectMake(0, 0, 200, 200)];
+    //    label.text= [NSString stringWithFormat:@"%ld", (long)indexPath.row];
+    //    [cell addSubview:label];
+    //    cell.layer.borderWidth = 2.0f;
+    //    cell.layer.borderColor =[UIColor whiteColor].CGColor;
+
+//    cell.backgroundColor =[ UIColor blueColor];
+    cell.backgroundColor = [UIColor greenColor];
+
+ cell.title.text = @"food";
+    cell.imageView.image =[ UIImage imageNamed:@"apple"];
+    cell.totalOutPut.text = [[GameHelper standardManager] foodoutPutforMainPlayer];
+
+    return cell;
+}
+//
+- (CGSize)  collectionView:(UICollectionView *)collectionView
+                    layout:(UICollectionViewLayout *)collectionViewLayout
+    sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+
+    return CGSizeMake(self.collectionViewP.frame.size.width , 120);
+}
+#pragma mark -Selection
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+//    CityCell *cell =
+//    [self.collectionView    dequeueReusableCellWithReuseIdentifier:kCityCell
+//                                                      forIndexPath:indexPath];
+//    [self.delegate selectedTile:self.players[indexPath.row] fromView:(UIView*)cell];
+}
+
+
 
 /*
 #pragma mark - Navigation

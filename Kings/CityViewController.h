@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface CityViewController : UIViewController
--(id)init;
+-(id)initWithPlayer:(Player*)playa;
 @end

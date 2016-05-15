@@ -30,26 +30,28 @@ static GameHelper *instance = nil;
 
     return self;
 }
--(NSArray*)getCities{
-    NSMutableArray* cities = [NSMutableArray new];
-    for (int i=0; i<16; i++) {
-        if (i % 2){
-            City * city = [City new];
-            city.cityName = @"Camelot";
-            [cities addObject:city];
-        }
-        // odd
-        else
-        {
-            City * city = [City new];
-            city.cityName = @"LALA";
-            city.diplomacy = notMet;
-            [cities addObject:city];
-        }
-        // even
+-(NSArray*)getPlayers:(Game*)game{
 
+    return [GameHelper standardManager].currentGame.players;
+}
 
+-(void)createNewGameWithName:(NSString*)name players:(NSArray<Player*>*)players{
+    Game *newGame =[ Game new];
+    newGame.gameName = name;
+    newGame.players = players;
+    newGame.mainPlayer = players[0];
+    [GameHelper standardManager].currentGame = newGame;
+    
+}
+-(void)startGame{
+    NSLog(@"game started");
+}
+-(NSString*)foodoutPutforMainPlayer{
+    Player* mainPlayer = [GameHelper standardManager].currentGame.mainPlayer;
+    NSInteger Outputfood =0;
+    for (Resource* resouce in mainPlayer.resources) {
+        Outputfood =  resouce.foodOutPut + Outputfood;
     }
-    return cities.copy;
+    return [NSString stringWithFormat: @"%ld", (long)Outputfood];
 }
 @end

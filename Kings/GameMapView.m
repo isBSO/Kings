@@ -11,7 +11,7 @@
 @interface GameMapView ()
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
-@property (nonatomic,strong) NSMutableArray*cities;
+@property (nonatomic,strong) NSMutableArray*players;
 @end
 NSString* kCityCell = @"CityCell";
 @implementation GameMapView
@@ -42,43 +42,31 @@ NSString* kCityCell = @"CityCell";
     return _collectionView;
 
 }
--(void)layoutSubviews{
-dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 
-
-//    double rads = DEGREES_TO_RADIANS(45);
-//    CGAffineTransform transform = CGAffineTransformRotate(CGAffineTransformIdentity, rads);
-//
-//
-//    [UIView animateWithDuration:0.5 animations:^{
-//        _collectionView.transform = transform;
-//    }];
-});
-    [super layoutSubviews];
-}
 -(void)didMoveToSuperview{
 
     [UIView animateWithDuration:0 animations:^{
         self.scrollView.contentSize = CGSizeMake([self widthforCElls], [self widthforCElls]);
+        self.scrollView.contentOffset = CGPointMake ([self widthforCElls]/2, [self widthforCElls]/2);
     } completion:^(BOOL finished) {
         self.scrollView.backgroundColor=[CityUtils backGroundPaper];
         [self.scrollView addSubview:self.collectionView];
     }];
 }
 -(CGFloat)widthforCElls{
-    return sqrtf(self.cities.count)*(kCityCellheight+kCityCellPAdding);
+    return sqrtf(self.players.count)*(kCityCellheight+kCityCellPAdding);
 }
 
 #pragma mark : CollectionViewDelegates
 - (NSInteger)collectionView:(UICollectionView *)collectionView
      numberOfItemsInSection:(NSInteger)section {
-    return self.cities.count;
+    return self.players.count;
 }
--(NSMutableArray*)cities{
-    if (!_cities) {
-        _cities =[[GameHelper standardManager] getCities].mutableCopy;
+-(NSMutableArray*)players{
+    if (!_players) {
+        _players =[[GameHelper standardManager] getPlayers:nil].mutableCopy;
     }
-    return _cities;
+    return _players;
 }
 - (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
 {
@@ -102,7 +90,7 @@ dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), di
 //    [cell addSubview:label];
 //    cell.layer.borderWidth = 2.0f;
 //    cell.layer.borderColor =[UIColor whiteColor].CGColor;
-   [ cell setupCellWithCity:self.cities[indexPath.row ]];
+   [ cell setupCellWithCity:self.players[indexPath.row ]];
     cell.backgroundColor =[ UIColor clearColor];
 
 
@@ -118,7 +106,10 @@ dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), di
 }
 #pragma mark -Selection
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    [self.delegate selectedTile:self.cities[indexPath.row]];
+    CityCell *cell =
+    [self.collectionView    dequeueReusableCellWithReuseIdentifier:kCityCell
+                                                      forIndexPath:indexPath];
+    [self.delegate selectedTile:self.players[indexPath.row] fromView:(UIView*)cell];
 }
 
 

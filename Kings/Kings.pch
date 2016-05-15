@@ -15,6 +15,7 @@
 #import "GameMapView.h"
 #import "GameHelper.h"
 #import "CityUtils.h"
+#import "Resource.h"
 
 #import "TemplateFancyNameLabel.h"
 
