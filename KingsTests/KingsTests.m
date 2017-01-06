@@ -3,7 +3,7 @@
 //  KingsTests
 //
 //  Created by isBSO on 5/2/16.
-//  Copyright © 2016 Bishow. All rights reserved.
+//  Copyright © 2016 Rajthala. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>

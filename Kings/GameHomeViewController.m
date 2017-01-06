@@ -15,6 +15,7 @@
 @property (nonatomic,strong) GameMapView* gameMap;
 @property (weak, nonatomic) IBOutlet UIView *topCont;
 @property (weak, nonatomic) IBOutlet UIView *bottomCont;
+@property (weak, nonatomic) IBOutlet UITextView *gameConsoleView;
 
 @end
 
@@ -40,6 +41,13 @@ dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.01 * NSEC_PER_SEC)),
 
     [self.view addSubview:self.gameMap];
 });
+    [[NSNotificationCenter defaultCenter] addObserverForName:@"turnComplete" object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
+        NSString* newString =[NSString stringWithFormat:@"%@ \n",note.object];
+        
+        
+        _gameConsoleView.text =[newString stringByAppendingString:_gameConsoleView.text];
+       
+    }];
 
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
@@ -109,5 +117,8 @@ dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.01 * NSEC_PER_SEC)),
     // Pass the selected object to the new view controller.
 }
 */
+- (IBAction)completeTurn:(id)sender {
+    [[GameHelper standardManager] completeTurn];
+}
 
 @end

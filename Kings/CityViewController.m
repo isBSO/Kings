@@ -8,6 +8,7 @@
 
 #import "CityViewController.h"
 #import "CityCollectionViewCell.h"
+#import "FoodSummaryCell.h"
 
 @interface CityViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionViewP;
@@ -15,6 +16,8 @@
 
 @end
 NSString* kCityCEllDetail = @"CityCollectionViewCell";
+NSString* kFoodSummaryCell = @"FoodSummaryCell";
+
 @implementation CityViewController
 -(id)initWithPlayer:(Player*)playa{
     UIStoryboard *storyboard =
@@ -31,6 +34,7 @@ NSString* kCityCEllDetail = @"CityCollectionViewCell";
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [_collectionViewP registerNib:[UINib nibWithNibName:kCityCEllDetail bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:kCityCEllDetail];
+        [_collectionViewP registerNib:[UINib nibWithNibName:kFoodSummaryCell bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:kFoodSummaryCell];
 //    [_collectionViewP registerClass:[CityCollectionViewCell class] forCellWithReuseIdentifier:kCityCEllDetail];
     _collectionViewP.dataSource = self;
 //    [_collectionView registerClass:[CityCell class] forCellWithReuseIdentifier:kCityCell];
@@ -56,6 +60,10 @@ NSString* kCityCEllDetail = @"CityCollectionViewCell";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
                   cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row == 0) {
+        FoodSummaryCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:kFoodSummaryCell forIndexPath:indexPath];
+        return cell;
+    }
     CityCollectionViewCell *cell =
     [collectionView    dequeueReusableCellWithReuseIdentifier:kCityCEllDetail
                                                       forIndexPath:indexPath];

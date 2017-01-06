@@ -3,7 +3,7 @@
 //  Kings
 //
 //  Created by isBSO on 5/15/16.
-//  Copyright © 2016 Bishow. All rights reserved.
+//  Copyright © 2016 Rajthala. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

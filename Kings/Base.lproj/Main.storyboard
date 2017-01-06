@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -44,7 +44,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AkZ-b6-hfq">
-                                <rect key="frame" x="0.0" y="70" width="600" height="530"/>
+                                <rect key="frame" x="0.0" y="70" width="600" height="395"/>
                                 <color key="backgroundColor" red="0.0" green="0.62835648150000001" blue="0.98784722219999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <segue destination="WvF-Gx-v5p" kind="embed" id="fVs-rG-sSX"/>
@@ -60,13 +60,35 @@
                                     <segue destination="B03-tA-m4g" kind="embed" id="HfA-7T-71u"/>
                                 </connections>
                             </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="938-6z-dYY">
+                                <rect key="frame" x="20" y="472" width="560" height="128"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7tC-f0-KUH">
+                                        <rect key="frame" x="170" y="12" width="220" height="104"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="7tC-f0-KUH" firstAttribute="leading" secondItem="938-6z-dYY" secondAttribute="leading" id="4ZK-qr-OWo"/>
+                                    <constraint firstAttribute="bottom" secondItem="7tC-f0-KUH" secondAttribute="bottom" id="CLo-4G-mQs"/>
+                                    <constraint firstItem="7tC-f0-KUH" firstAttribute="top" secondItem="938-6z-dYY" secondAttribute="top" id="JgG-gX-ZaZ"/>
+                                    <constraint firstAttribute="height" constant="128" id="eAr-GF-KaI"/>
+                                    <constraint firstAttribute="trailing" secondItem="7tC-f0-KUH" secondAttribute="trailing" id="yzd-nz-g1p"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="938-6z-dYY" secondAttribute="trailing" id="07X-kH-wuh"/>
                             <constraint firstItem="AkZ-b6-hfq" firstAttribute="leading" secondItem="L1z-qf-9wG" secondAttribute="leadingMargin" constant="-20" id="2W0-cf-GNa"/>
-                            <constraint firstItem="ur6-JB-e4J" firstAttribute="top" secondItem="AkZ-b6-hfq" secondAttribute="bottom" id="337-vZ-x4j"/>
+                            <constraint firstItem="ur6-JB-e4J" firstAttribute="top" secondItem="AkZ-b6-hfq" secondAttribute="bottom" constant="135" id="337-vZ-x4j"/>
+                            <constraint firstItem="938-6z-dYY" firstAttribute="leading" secondItem="L1z-qf-9wG" secondAttribute="leadingMargin" id="Mgl-Sz-MUn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="AkZ-b6-hfq" secondAttribute="trailing" constant="-20" id="QBA-CS-mWo"/>
                             <constraint firstItem="VXr-9Q-Ele" firstAttribute="top" secondItem="L1z-qf-9wG" secondAttribute="topMargin" id="SG3-lH-SJ6"/>
+                            <constraint firstItem="ur6-JB-e4J" firstAttribute="top" secondItem="938-6z-dYY" secondAttribute="bottom" id="W27-9q-VxY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="VXr-9Q-Ele" secondAttribute="trailing" constant="-20" id="Wjb-Yt-gfS"/>
                             <constraint firstItem="AkZ-b6-hfq" firstAttribute="top" secondItem="VXr-9Q-Ele" secondAttribute="bottom" id="c9J-yg-sOW"/>
                             <constraint firstItem="VXr-9Q-Ele" firstAttribute="leading" secondItem="L1z-qf-9wG" secondAttribute="leadingMargin" constant="-20" id="mvk-1l-i5m"/>
@@ -74,6 +96,7 @@
                     </view>
                     <connections>
                         <outlet property="bottomCont" destination="AkZ-b6-hfq" id="Zzq-Gn-lWj"/>
+                        <outlet property="gameConsoleView" destination="7tC-f0-KUH" id="MUi-ow-5Hi"/>
                         <outlet property="topCont" destination="VXr-9Q-Ele" id="Yif-78-1wg"/>
                     </connections>
                 </viewController>
@@ -93,8 +116,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="83m-fs-HgG">
-                                <rect key="frame" x="0.0" y="39" width="320" height="134"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="83m-fs-HgG">
+                                <rect key="frame" x="-4" y="39" width="328" height="529"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pLa-1E-lhZ">
                                     <size key="itemSize" width="320" height="100"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -107,11 +130,11 @@
                                     <outlet property="delegate" destination="WvF-Gx-v5p" id="oRT-cc-Nlo"/>
                                 </connections>
                             </collectionView>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kC2-3A-LZS">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kC2-3A-LZS">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="77"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9On-pc-ieG">
-                                        <rect key="frame" x="271" y="24" width="37" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9On-pc-ieG">
+                                        <rect key="frame" x="283" y="24" width="37" height="30"/>
                                         <state key="normal" title="close"/>
                                         <connections>
                                             <action selector="dismissME:" destination="WvF-Gx-v5p" eventType="touchUpInside" id="Jlt-a7-q72"/>

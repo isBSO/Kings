@@ -35,6 +35,9 @@
 		6789BF391CDEF692004A1589 /* GameHelperTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6789BF381CDEF692004A1589 /* GameHelperTest.m */; };
 		6789BF411CDEF87A004A1589 /* KingsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6789BF401CDEF87A004A1589 /* KingsUITests.m */; };
 		67B372601CDC353D000C2120 /* CityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B3725F1CDC353D000C2120 /* CityViewController.m */; };
+		CCA783F81D2DF29100EF3602 /* GameProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA783F71D2DF29100EF3602 /* GameProcessor.m */; };
+		CCD4DD051D31715C00491E4F /* FoodSummaryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD4DD031D31715C00491E4F /* FoodSummaryCell.m */; };
+		CCD4DD061D31715C00491E4F /* FoodSummaryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCD4DD041D31715C00491E4F /* FoodSummaryCell.xib */; };
 		DF27A0D73A51129781FB1400 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4453E3229E0BC2CD7CB33481 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +112,11 @@
 		6789BF421CDEF87A004A1589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67B3725E1CDC353D000C2120 /* CityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityViewController.h; sourceTree = "<group>"; };
 		67B3725F1CDC353D000C2120 /* CityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityViewController.m; sourceTree = "<group>"; };
+		CCA783F61D2DF29100EF3602 /* GameProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameProcessor.h; sourceTree = "<group>"; };
+		CCA783F71D2DF29100EF3602 /* GameProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameProcessor.m; sourceTree = "<group>"; };
+		CCD4DD021D31715C00491E4F /* FoodSummaryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodSummaryCell.h; sourceTree = "<group>"; };
+		CCD4DD031D31715C00491E4F /* FoodSummaryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodSummaryCell.m; sourceTree = "<group>"; };
+		CCD4DD041D31715C00491E4F /* FoodSummaryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodSummaryCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +208,9 @@
 				67B3725E1CDC353D000C2120 /* CityViewController.h */,
 				67B3725F1CDC353D000C2120 /* CityViewController.m */,
 				676460B61CE8E479009F7458 /* CityCollectionViewCell.h */,
+				CCD4DD021D31715C00491E4F /* FoodSummaryCell.h */,
+				CCD4DD031D31715C00491E4F /* FoodSummaryCell.m */,
+				CCD4DD041D31715C00491E4F /* FoodSummaryCell.xib */,
 				676460B71CE8E479009F7458 /* CityCollectionViewCell.m */,
 				676460B81CE8E479009F7458 /* CityCollectionViewCell.xib */,
 				670069191CD837A200D18BE8 /* Templates */,
@@ -286,6 +297,8 @@
 			children = (
 				6700690D1CD8148700D18BE8 /* GameHelper.h */,
 				6700690E1CD8148700D18BE8 /* GameHelper.m */,
+				CCA783F61D2DF29100EF3602 /* GameProcessor.h */,
+				CCA783F71D2DF29100EF3602 /* GameProcessor.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -386,6 +399,11 @@
 				TargetAttributes = {
 					670068B81CD80C0500D18BE8 = {
 						CreatedOnToolsVersion = 7.2;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					6789BF2D1CDEF587004A1589 = {
 						CreatedOnToolsVersion = 7.2;
@@ -422,6 +440,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCD4DD061D31715C00491E4F /* FoodSummaryCell.xib in Resources */,
 				670069171CD8355E00D18BE8 /* CityCell.xib in Resources */,
 				670068CF1CD80C0500D18BE8 /* LaunchScreen.storyboard in Resources */,
 				670068CC1CD80C0500D18BE8 /* Assets.xcassets in Resources */,
@@ -502,6 +521,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCD4DD051D31715C00491E4F /* FoodSummaryCell.m in Sources */,
 				670068F71CD80CA400D18BE8 /* GameHomeViewController.m in Sources */,
 				670068C11CD80C0500D18BE8 /* AppDelegate.m in Sources */,
 				670068CA1CD80C0500D18BE8 /* Kings.xcdatamodeld in Sources */,
@@ -518,6 +538,7 @@
 				676460B51CE8E157009F7458 /* Resource.m in Sources */,
 				676460B91CE8E479009F7458 /* CityCollectionViewCell.m in Sources */,
 				670069151CD8355100D18BE8 /* CityCell.m in Sources */,
+				CCA783F81D2DF29100EF3602 /* GameProcessor.m in Sources */,
 				670068BE1CD80C0500D18BE8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -666,7 +687,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.isBSO.Kings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -682,7 +703,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.isBSO.Kings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

@@ -3,7 +3,7 @@
 //  Kings
 //
 //  Created by isBSO on 5/15/16.
-//  Copyright © 2016 Bishow. All rights reserved.
+//  Copyright © 2016 . All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -14,6 +14,7 @@ typedef NS_ENUM(NSInteger, ResourceOutType) {
     diplomatic,
     religion,
 };
+
 @interface Resource : NSObject
 
 @property (nonatomic,strong) NSString* resourceName;

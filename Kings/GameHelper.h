@@ -16,6 +16,6 @@
 -(NSArray*)getPlayers:(Game*)game;
 -(void)createNewGameWithName:(NSString*)name players:(NSArray<Player*>*)players;
 
--(void)startGame;
+-(void)completeTurn;
 -(NSString*)foodoutPutforMainPlayer;
 @end

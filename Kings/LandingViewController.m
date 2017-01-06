@@ -17,9 +17,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [GameProcessor simulateGame];
+    return;
     Player* mainPlayer = [Player new];
-    mainPlayer.firstName = @"Bishow ";
-    mainPlayer.lastName = @"Rajthala";
+    mainPlayer.firstName = @"Bayer ";
+    mainPlayer.lastName = @"Mayer";
     mainPlayer.titleLord = @"lodnsd fsdhfdskfjsd fd";
     mainPlayer.goldCount = 12321;
 
@@ -32,8 +34,26 @@
     foodResource2.resourceName = @"farm";
     foodResource2.foodOutPut = 1079;
     mainPlayer.resources = @[foodResource,foodResource2];
+
+    // Player 2
+    Player* otherPlayer = [Player new];
+    otherPlayer.firstName = @"daka ";
+    otherPlayer.lastName = @"gunda";
+    otherPlayer.titleLord = @"lodnsd fsdhfdskfjsd fd";
+    otherPlayer.goldCount = 12321;
+    otherPlayer.isHidden = true;
+
+    Resource* foodResource4 = [Resource new];
+    foodResource4.resourceType = food;
+    foodResource4.resourceName = @"farm";
+    foodResource4.foodOutPut = 100;
+    Resource* foodResource10 = [Resource new];
+    foodResource10.resourceType = food;
+    foodResource10.resourceName = @"farm";
+    foodResource10.foodOutPut = 1079;
+    otherPlayer.resources = @[foodResource4,foodResource10];
     
-    [[GameHelper standardManager] createNewGameWithName:@"Bishow game" players:@[mainPlayer]];
+    [[GameHelper standardManager] createNewGameWithName:@"New game" players:@[mainPlayer,otherPlayer,[Player new],[Player new]]];
     // Do any additional setup after loading the view.
 }
 - (IBAction)startGame:(id)sender {
